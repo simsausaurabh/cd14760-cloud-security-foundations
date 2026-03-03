@@ -5,7 +5,7 @@ Parameters:
   GitHubOwner:
     Type: String
     Description: Your GitHub username or organization
-    Default: udacity
+    Default: simsausaurabh
   GitHubRepo:
     Type: String
     Description: Repository name
@@ -17,19 +17,19 @@ Parameters:
   GitHubTokenSecretName:
     Type: String
     Description: Secrets Manager secret name for GitHub OAuth token
-    Default: GitHubToken2
+    Default: cd14760-secret-2
   ArtifactBucket:
     Type: String
     Description: S3 bucket for pipeline artifacts
-    Default: config-restricted-ssh
+    Default: cd14760-s3-bucket-unique
   CodePipelineRoleArn:
     Type: String
     Description: ARN of the CodePipeline service role
-    Default: arn:aws:iam::001715059841:role/codepipeline-service-role
+    Default: arn:aws:iam::724772086654:role/codepipeline-service-role-cf
   CodeBuildRoleArn:
     Type: String
     Description: ARN of the CodeBuild service role
-    Default: arn:aws:iam::001715059841:role/codebuild-service-role
+    Default: arn:aws:iam::724772086654:role/codebuild-service-role-cf
 
 Resources:
   ConfigPipeline:

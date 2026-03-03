@@ -5,7 +5,7 @@ Description: >
 Parameters:
   S3BucketName:
     Type: String
-    Default: tscotto-udacity-config-restricted-ssh
+    Default: cd14760-s3-bucket-unique
     Description: "Exact S3 bucket name to create and reference in the inline policy"
 
 
