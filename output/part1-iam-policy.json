@@ -1,0 +1,17 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowAllEC2Actions",
+            "Effect": "Allow",
+            "Action": "ec2:*",
+            "Resource": "*"
+        },
+        {
+            "Sid": "DenyEverythingElse",
+            "Effect": "Deny",
+            "NotAction": "ec2:*",
+            "Resource": "*"
+        }
+    ]
+}
