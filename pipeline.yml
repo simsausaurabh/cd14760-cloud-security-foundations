@@ -17,7 +17,7 @@ Parameters:
   GitHubTokenSecretName:
     Type: String
     Description: Secrets Manager secret name for GitHub OAuth token
-    Default: cd14760-secret-2
+    Default: GitHubToken
   ArtifactBucket:
     Type: String
     Description: S3 bucket for pipeline artifacts
