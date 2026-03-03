@@ -1,9 +1,14 @@
 {
   "ConfigRuleName": "org-restricted-ssh",
   "Description": "Security groups must not allow SSH from 0.0.0.0/0",
-  "Scope": {},
+  "Scope": {
+    "ComplianceResourceTypes": [
+      "AWS::EC2::SecurityGroup"
+    ]
+  },
   "Source": {
-    
+    "Owner": "AWS",
+    "SourceIdentifier": "INCOMING_SSH_DISABLED"
   },
   "MaximumExecutionFrequency": "TwentyFour_Hours"
 }
